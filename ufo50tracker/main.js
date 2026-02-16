@@ -37,7 +37,7 @@ let init = function() {
         img.setAttribute("data-completion", getCookie(img.id));
         img.setAttribute("onclick", "trackStuff(this);");
         img.setAttribute("draggable", "false");
-        me.style.border = borderArray[Number(me.getAttribute("data-completion"))];
+        img.style.border = borderArray[Number(img.getAttribute("data-completion"))];
         document.getElementById("tracker").appendChild(img);
     };
 
